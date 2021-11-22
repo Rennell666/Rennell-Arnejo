@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>Registration Page</title>
+<head>
+<style>
+  h1 {
+  color: black;
+  text-align: center;
+  font-family: "cambria";
+} 
+* {
+  box-sizing:10px;
+}
+body {
+  background-image: url('https://bridalshower101.com/wp-content/uploads/2020/08/aesthetic-background-7.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  font-size: 20px;
+}
+input[type=text], select, textarea {
+  font-family: "cambria";
+  font-size: 100px;
+  text-align: center;
+  width: 20%;
+  padding: 10px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #2ddd27;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  width: 20%;
+  border-radius: 50px;
+  cursor: pointer;
+  float: center;
+}
+input[type=reset] {
+  background-color: red;
+  color: rgb(0, 0, 0);
+  width: 20%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  float: center;
+}
+input[type=email], select, textarea {
+  font-family: "cambria";
+  font-size: large;
+  width: 30%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+input[type=text], select, textarea {
+  font-family: "cambria";
+  font-size: large;
+  width: 30%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 500px;
+}
+
+.container {
+  border-radius: 100px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.col-25 {
+  float: center;
+  margin-top: 1px;
+  width: 30%;
+}
+
+.col-75 {
+  float: center;
+  margin-top: 1px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>REGISTRATION FORM</h1>
+<div class="container">
+  <center>
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name:</label>
+    </div>
+    <div class="col-75">
+      <input type="text">
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-25">
+      <label for="Mname">Middle Name:</label>
+    </div>
+    <div class="col-75">
+      <input type="text">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Lname">Last Name:</label>
+    </div>
+    <div class="col-75">
+      <input type="text">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Gender">Gender:</label>
+    </div>
+    <div class="col-75">
+      <input type="radio" id="Male" name="Gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email Address:</label>
+    </div>
+    <div class="col-75">
+      <input type="email">
+    </div>
+  </div>
+	<div class="row">
+    <div class="col-25">
+      <label for="Home Address">Home Address:</label>
+    </div>
+    </div>
+    <textarea id="Home Adress" name="Home Adress" rows="1" cols="40">
+  	</textarea><br><br>
+	<label>Hobbies:</label><br>
+  	<input type="checkbox" id="hobby1" name="hobby1" value="Computer Games">
+  	<label for="hobby1">Computer Games</label><br>
+  	<input type="checkbox" id="hobby2" name="hobby2" value="Playing Music Instrument">
+  	<label for="hobby2">Playing Music Instruments</label><br>
+ 	<input type="checkbox" id="hobby3" name="hobby3" value="Cooking">
+  	<label for="hobby3">Cooking</label><br>
+  	<input type="checkbox" id="hobby4" name="hobby4" value="Drawing">
+  	<label for="hobby3">Drawing</label><br><br>
+      <div class="row">
+    <div class="col-25">
+      <label for="Favcolor">Favorite Color:</label>
+    </div>
+    <div class="col-75">
+      <select id="Color" name="Color">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="White">White</option>
+		<option Valie="Black">Black</option>
+		<option Valie="Green">Green</option>
+		<option Valie="Yellow">Yellow</option>
+      </select>
+    </div>
+  </div>
+	<div class="row">
+    <div class="col-25">
+      <label for="Home Address">Say Something About yourself:</label>
+    </div>
+	</div>
+    <textarea id="Home Adress" name="Home Adress" rows="1" cols="40">
+  	</textarea><br><br>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+  </div>
+  </form>
+</div>
+
+</body>
+</html>
